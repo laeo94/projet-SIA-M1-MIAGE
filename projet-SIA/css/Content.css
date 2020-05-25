@@ -1,0 +1,150 @@
+.btn {
+	padding: .5rem 1rem;
+	background : #76987F;
+	color: white;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+}
+.btn:hover{
+	color: white !important;
+	background: green;
+}
+.post-chosen:hover {
+	color: #97BD27 !important;
+}
+.clearfix::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.content {
+	width: 90%;
+	margin : 30px auto 30px;
+}
+
+.content .main-content {
+	width: 70%;
+	float: left;
+}
+
+.content .main-content .recent-post-title{
+	margin:20px;
+}
+
+.content .main-content .post {
+	width: 95%;
+	height: 270px;
+	margin: 20px auto;
+	border-radius: 5px;
+	background: #D9EADD;
+	position:relative;
+}
+.content .main-content .post .read-more{
+	position: absolute;
+	bottom: 10px;
+	right: 10px; 
+}
+.content .main-content .post .post-image {
+	width: 40%;
+	height: 100%;
+	float: left;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.content .main-content .post .post-preview {
+	padding: 10px;
+	width: 60%;
+	float: right;
+}
+
+.content .sidebar {
+	width: 30%;
+	float: left;
+	height: 300px;
+}
+
+.content .sidebar .section {
+	background: #D9EADD;
+	padding : 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.content .sidebar .section.search {
+	margin-top: 80px;
+}
+.content .sidebar .section.news ul{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	border-top: 1px solid #555651; 
+}
+
+.content .sidebar .section.news ul li a{
+	border-bottom : 1px solid #555651;
+	display: block; 
+	padding: 15px 0px 15px 0px;
+}
+.content .sidebar .section.news ul li a:hover{
+	color: #97BD27 !important;
+	padding-left: 10px;
+	transition: all 0.3s;
+}
+
+.content .sidebar .section .section-title {
+	margin: 10px 0px 10px 0px;
+}
+
+.text-input {
+	padding: .7rem 1rem;
+	display: block;
+	width: 100%;
+	border:1px solid #e0e0e0;
+	border-radius: 5px;
+	outline: none;
+	color: white;
+	line-height: 1.5rem;
+	font-family: 'Nunito',serif;
+	font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 934px){
+	.content {
+		width: 100%;
+		height: 100%;
+	}
+	.content .main-content .post {
+		width: 100%;
+	}
+	.content .main-content {
+		width: 100%;
+		padding: 10px;
+	}
+	.content .sidebar {
+		width: 100%;
+		height: auto;
+		padding: 10px;
+	}
+	.content .sidebar .section.search {
+		margin-top: 30px;
+	}
+}
+@media only screen and (max-width: 645px){
+	.content .main-content .post {
+		height: auto;
+	
+	}
+	.content .main-content .post .post-image {
+		width: 100%;
+	}
+	
+	.content .main-content .post .post-preview {
+		width: 100%;
+	}
+	.content .main-content .post .read-more{
+		position: static;
+		width: 100%;
+		display: block;
+	}
+
+}

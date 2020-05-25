@@ -1,0 +1,43 @@
+.nav-link {
+    font-size: 1.5vw;
+    margin-left: 40px;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: #17361e;
+}
+
+.img-responsive {
+    width: 6%;
+    margin-left: 40px;
+}
+
+#titre {
+    color: white;
+    font-size: 1.5vw;
+}
+
+.navbar-custom {
+    background-color: #40995c;
+}
+
+.navbar-custom .nav-link {
+    color: #ffffff;
+}
+
+@media screen and (min-device-width: 0px) and (max-device-width: 800px) {
+    .img-responsive {
+        width: 15%;
+        margin-left: 0px;
+    }
+    .navbar-toggler {
+        font-size: 5vw;
+    }
+    .nav-link {
+        font-size: 5vw;
+    }
+    #titre {
+        margin-left: 0;
+        font-size: 3vw;
+    }
+}

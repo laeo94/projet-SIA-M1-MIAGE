@@ -1,0 +1,90 @@
+.footer {
+    background: #40995c;
+    color: white;
+    height: 400px;
+    position: relative;
+}
+
+.footer .footer-content {
+    height: 350px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section {
+    flex: 1;
+    padding: 25px;
+}
+
+.footer .footer-content h3 {
+    color: white;
+}
+
+.footer .footer-content .about img {
+    height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer .footer-content .about p {
+    text-align: center;
+}
+
+.footer .footer-content .about .contact span {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.footer .footer-content .about .socials a {
+    width: 45px;
+    height: 41px;
+    padding-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    -webkit-filter: invert(100%);
+}
+
+.footer .footer-content .links ul a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+}
+
+.footer .footer-content .links ul a:hover {
+    color: white;
+    margin-left: 15px;
+    transition: all .3s;
+}
+
+.footer .footer-bottom {
+    background: #303036;
+    color: #fff;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 934px) {
+    .footer {
+        height: auto;
+        padding-bottom: 90px;
+    }
+    .footer .footer-content {
+        height: auto;
+        flex-direction: column;
+    }
+    .footer .footer-content .about img {
+        height: 100px;
+    }
+}

@@ -1,0 +1,56 @@
+        /*PARTIE PANNEL*/
+        
+        #pannel {
+            padding: 1em;
+        }
+        
+        #onglets {
+            text-align: center;
+        }
+        
+        #onglets ul {
+            /* resset du ul */
+            padding: 0;
+            margin: 0;
+        }
+        
+        .onglet {
+            /* definition des onglet 'normaux' */
+            display: inline-block;
+            padding: 1em;
+            border: solid 5px #804000;
+            opacity: .3;
+            font-weight: bold;
+            border-radius: 10px 10px 0 0;
+            color: #804000;
+            cursor: pointer;
+        }
+        
+        .onglet.actif {
+            /* ce qui change quand l'onglet est actif */
+            opacity: 1;
+        }
+        
+        .contenu {
+            /* contenu 'normal' */
+            display: none;
+            border: solid 5px #804000;
+            padding: 2em;
+            background-image: linear-gradient( to top, #d6f5d6, #ffffb3);
+        }
+        
+        .contenu.actif {
+            /* Ce qui change quand le contenu est actif */
+            display: block;
+        }
+        /*PARTIE BUTTON LOGO*/
+        
+        .fas.fa-plus-circle {
+            color: blue;
+        }
+        
+        @media screen and (min-device-width: 0px) and (max-device-width: 800px) {
+            #pannel {
+                padding: 0;
+            }
+        }
